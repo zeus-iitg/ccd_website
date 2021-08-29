@@ -1,0 +1,112 @@
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+
+.past-recruiters-carousel {
+  padding-top: 100px;
+}
+
+.ngb-progressbar {
+  margin-top: 5rem;
+}
+
+.about {
+  width: 500px;
+  height: 800px;
+}
+
+.quickLinks{
+  min-width: 600px;
+  height: 800px;
+}
+
+.caption {
+  text-align: center;
+}
+
+.tile-image {
+  height: 250px;
+  width: 250px;
+}
+
+.caption {
+  padding-top: 20px;
+}
+
+.internship {
+}
+
+.brochure {
+}
+
+.team {
+  padding-bottom: 80px;
+}
+
+.guidelines {
+  padding-bottom: 80px;
+}
+
+.testimonials-row {
+  height: fit-content;
+  padding-bottom: 0px;
+}
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
+.testimonial2 {
+  font-family: "Montserrat", sans-serif !important;
+  color: black;
+  font-weight: 300 !important;
+}
+
+.testimonial2 h1,
+.testimonial2 h2,
+.testimonial2 h3,
+.testimonial2 h4,
+.testimonial2 h5,
+.testimonial2 h6 {
+  color: #3e4555;
+}
+
+.testimonial2 h5 {
+  line-height: 30px;
+  font-size: 25.55px;
+  font-weight: 400;
+}
+
+.testimonial2 .font-weight-medium {
+  font-weight: 500;
+}
+
+.testimonial2 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.testimonial2 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.testimonial2 .image-thumb {
+  background: url("../../assets/img/img-bg.png") no-repeat top center;
+  text-align: center;
+  padding: 10% 0;
+}
+
+.testimonial2 .image-thumb img {
+  width: 400px;
+}
+
+pre{
+  white-space:pre-wrap;
+  font-size: 15px;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+.section {
+  padding-bottom: 0px;
+}
+
+.testimonials-carousel {
+  padding-bottom: 0px;
+}
