@@ -1,6 +1,29 @@
-import {Component, OnInit, Renderer2, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, Renderer2, ViewEncapsulation, Input} from '@angular/core';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 import {OwlOptions} from 'ngx-owl-carousel-o';
+import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+
+@Component({
+    selector: 'app-modal-content',
+    template: `
+    <div class="modal-header">
+        <h5 class="modal-title text-center">Placement Reports</h5>
+        <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p><a href=""> Placement Statistics 2019-20 </a></p>
+        <p><a href=""> Placement Statistics 2018-19 </a></p>
+        <p><a href=""> Placement Statistics 2017-18 </a></p>
+    </div>
+    `
+})
+export class NgbdModalContent {
+    @Input() name;
+
+    constructor(public activeModal: NgbActiveModal) {}
+}
 
 @Component({
     selector: 'app-components',
@@ -14,110 +37,110 @@ export class ComponentsComponent implements OnInit {
         {
             id: 1,
             src: '../../assets/img/Website Icons/1.Microsoft.png',
-            alt: 'Side 1',
-            title: 'Side 1'
+            alt: 'Microsoft',
+            title: 'Microsoft'
         },
         {
             id: 2,
             src: '../../assets/img/Website Icons/2.Bajaj.jpg',
-            alt: 'Side 2',
-            title: 'Side 2'
+            alt: 'Bajaj',
+            title: 'Bajaj'
         },
         {
             id: 3,
             src: '../../assets/img/Website Icons/3.qualcomm.png',
-            alt: 'Side 3',
-            title: 'Side 3'
+            alt: 'Qualcomm',
+            title: 'Qualcomm'
         },
         {
             id: 4,
             src: '../../assets/img/Website Icons/4. TI.png',
-            alt: 'Side 4',
-            title: 'Side 4'
+            alt: 'Texas Instruments',
+            title: 'Texas Instruments'
         },
         {
             id: 5,
             src: '../../assets/img/Website Icons/5. Google.jpg',
-            alt: 'Side 5',
-            title: 'Side 5'
+            alt: 'Google',
+            title: 'Google'
         },
         {
             id: 6,
             src: '../../assets/img/Website Icons/6. GS.png',
-            alt: 'Side 6',
-            title: 'Side 6'
+            alt: 'Goldman Sachs',
+            title: 'Goldman Sachs'
         },
         {
             id: 7,
             src: '../../assets/img/Website Icons/7. LTI.png',
-            alt: 'Side 7',
-            title: 'Side 7'
+            alt: 'Larsen & Toubro',
+            title: 'Larsen & Toubro'
         },
         {
             id: 8,
             src: '../../assets/img/Website Icons/8. Jaguar Land Rover.png',
-            alt: 'Side 8',
-            title: 'Side 8'
+            alt: 'Jaguar Land Rover',
+            title: 'Jaguar Land Rover'
         },
         {
             id: 9,
             src: '../../assets/img/Website Icons/9. Samsung.png',
-            alt: 'Side 9',
-            title: 'Side 9'
+            alt: 'Samsung',
+            title: 'Samsung'
         },
         {
             id: 10,
             src: '../../assets/img/Website Icons/10. Mastercard.jpg',
-            alt: 'Side 10',
-            title: 'Side 10'
+            alt: 'Mastercard',
+            title: 'Mastercard'
         },
         {
             id: 11,
             src: '../../assets/img/Website Icons/11. MB.png',
-            alt: 'Side 11',
-            title: 'Side 11'
+            alt: 'Mercedes-Benz',
+            title: 'Mercedes-Benz'
         },
         {
             id: 12,
             src: '../../assets/img/Website Icons/12. UBER.png',
-            alt: 'Side 12',
-            title: 'Side 12'
+            alt: 'Uber',
+            title: 'Uber'
         },
         {
             id: 13,
             src: '../../assets/img/Website Icons/13. Oracle.png',
-            alt: 'Side 13',
-            title: 'Side 13'
+            alt: 'Oracle',
+            title: 'Oracle'
         },
         {
             id: 14,
             src: '../../assets/img/Website Icons/14. GAIL.png',
-            alt: 'Side 14',
-            title: 'Side 14'
+            alt: 'GAIL',
+            title: 'GAIL'
         },
         {
             id: 15,
             src: '../../assets/img/Website Icons/15. Mahindra.png',
-            alt: 'Side 15',
-            title: 'Side 15'
+            alt: 'Mahindra',
+            title: 'Mahindra'
         },
         {
             id: 16,
             src: '../../assets/img/Website Icons/16. Intel.png',
-            alt: 'Side 16',
-            title: 'Side 16'
+            alt: 'Intel',
+            title: 'Intel'
         },
         {
             id: 17,
             src: '../../assets/img/Website Icons/17. Sprinklr.png',
-            alt: 'Side 17',
-            title: 'Side 17'
+            alt: 'Sprinklr',
+            title: 'Sprinklr'
         },
         {
             id: 18,
             src: '../../assets/img/Website Icons/18. Jio.jpg',
-            alt: 'Side 18',
-            title: 'Side 18'
+            alt: 'Jio',
+            title: 'Jio'
         }
     ]
 
@@ -235,7 +258,11 @@ export class ComponentsComponent implements OnInit {
         }
     }, 20)
 
-    constructor( private renderer: Renderer2) {}
+    constructor( private renderer: Renderer2, private modalService: NgbModal) {}
+    open() {
+        const modalRef = this.modalService.open(NgbdModalContent);
+        modalRef.componentInstance.name = 'World';
+    }
     isWeekend(date: NgbDateStruct) {
         const d = new Date(date.year, date.month - 1, date.day);
         return d.getDay() === 0 || d.getDay() === 6;

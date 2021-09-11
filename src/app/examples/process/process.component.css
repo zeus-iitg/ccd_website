@@ -1,0 +1,28 @@
+.proced {
+    display: block;
+    width:50%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#procedure{
+    text-align:justify;
+}
+
+a {
+    font-weight: 500;
+    color: dodgerblue;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.images-title {
+    font-weight: 500;
+}
+
+p {
+    color: black;
+    font-weight: 400;
+}

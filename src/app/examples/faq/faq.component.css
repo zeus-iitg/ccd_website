@@ -1,0 +1,16 @@
+mark {
+    background-color: yellow;
+}
+
+.images-title {
+    font-weight: 500;
+}
+
+.ques p {
+    font-weight: 700;
+}
+
+p {
+    color: black;
+    font-weight: 400;
+}

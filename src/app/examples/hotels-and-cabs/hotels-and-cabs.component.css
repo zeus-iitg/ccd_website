@@ -1,0 +1,29 @@
+mark {
+    background-color: yellow;
+}
+
+.images-title {
+    font-weight: 500;
+}
+
+th, td, p {
+    color: black;
+    font-weight: 400;
+}
+
+a {
+    font-weight: 500;
+    color: dodgerblue;
+}
+
+.mat-column-address {
+    width: 30%;
+}
+
+.additional-hotels {
+    padding-top: 20px;
+}
+
+.mat-column-cab_service_name {
+    width: 50%;
+}

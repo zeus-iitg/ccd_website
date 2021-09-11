@@ -1,0 +1,16 @@
+mark {
+    background-color: yellow;
+}
+
+.images-title {
+    font-weight: 500;
+}
+
+h4, li {
+    color: black;
+    font-weight: 400;
+}
+
+h4 {
+    padding-bottom: 10px;
+}

@@ -1,0 +1,59 @@
+.title {
+    margin-bottom: 0px;
+}
+
+a {
+    font-weight: 500;
+    color: dodgerblue;
+}
+
+.flex-container-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: -35px;
+    margin-right: -20px;
+}
+
+.img-circle {
+    height: 300px;
+    width: 300px;
+    max-width: 300px;
+    margin-left: -70px;
+    margin-top: -50px;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.img-thumbnail {
+    height: 225px;
+    width: 225px;
+    margin-left: 20px;
+}
+
+.text-center {
+    text-align: center;
+    width: 250px;
+    font-weight: 600;
+}
+
+.title {
+    font-weight: bold;
+    color: #585858;
+}
+
+.text-center2 {
+    text-align: center;
+    font-size: 15px;
+    width: 250px;
+}
+
+p {
+    padding-left: 11px;
+}
+
+.images-title {
+    font-weight: 500;
+}
