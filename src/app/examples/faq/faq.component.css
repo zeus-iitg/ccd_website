@@ -14,3 +14,11 @@ p {
     color: black;
     font-weight: 400;
 }
+
+.ans {
+    padding-bottom: 10px;
+}
+
+.container {
+    padding-top: 60px;
+}

@@ -1,0 +1,71 @@
+mark {
+    background-color: yellow;
+}
+
+.images-title {
+    font-weight: 500;
+}
+
+.container {
+    padding-top: 60px;
+}
+
+p {
+    color: black;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.guest-house-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.guest-house-image img {
+    width: 75%;
+}
+
+.ccd-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.ccd-image img{
+    width: 75%;
+}
+
+.guest-house, .auditorium, .computer-centre, .conference-hall {
+    padding-top: 20px;
+}
+
+.auditorium-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.auditorium-image img {
+    width: 75%;
+}
+
+.computer-centre-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.computer-centre-image img {
+    width: 75%;
+}
+
+.conference-hall-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.conference-hall-image img {
+    width: 75%;
+}

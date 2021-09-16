@@ -5,3 +5,20 @@ mark {
 .images-title {
     font-weight: 500;
 }
+
+.container {
+    padding-top: 60px;
+}
+
+h3 {
+    color: black;
+    font-weight: 400;
+}
+
+.PG {
+    padding-top: 50px;
+}
+
+.second-chart {
+    padding-top: 50px;
+}

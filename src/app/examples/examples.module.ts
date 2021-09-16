@@ -3,9 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { LandingComponent } from './landing/landing.component';
-import { ProfileComponent } from './profile/profile.component';
-import { SignupComponent } from './signup/signup.component';
 import { CoordinatorsComponent } from './coordinators/coordinators.component';
 import { OfficeComponent } from './office/office.component';
 import { HocccdComponent } from './hocccd/hocccd.component';
@@ -22,6 +19,13 @@ import {MatTableModule} from '@angular/material/table';
 import { AcademicsComponent } from './academics/academics.component';
 import { GraduatingStudentsComponent } from './graduating-students/graduating-students.component';
 import {ChartsModule} from 'ng2-charts';
+import { LifeAtIitgComponent } from './life-at-iitg/life-at-iitg.component';
+import { AboutIitgComponent } from './about-iitg/about-iitg.component';
+import { ResearchComponent } from './research/research.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { FacilitiesComponent } from './facilities/facilities.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
     imports: [
@@ -32,11 +36,10 @@ import {ChartsModule} from 'ng2-charts';
         RouterModule,
         MatTableModule,
         ChartsModule,
+        MatGridListModule,
+        MatCardModule,
     ],
     declarations: [
-        LandingComponent,
-        SignupComponent,
-        ProfileComponent,
         CoordinatorsComponent,
         OfficeComponent,
         HocccdComponent,
@@ -48,7 +51,12 @@ import {ChartsModule} from 'ng2-charts';
         ReachingIitgComponent,
         HotelsAndCabsComponent,
         AcademicsComponent,
-        GraduatingStudentsComponent
+        GraduatingStudentsComponent,
+        LifeAtIitgComponent,
+        AboutIitgComponent,
+        ResearchComponent,
+        AchievementsComponent,
+        FacilitiesComponent,
     ]
 })
 export class ExamplesModule { }

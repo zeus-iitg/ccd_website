@@ -27,3 +27,15 @@ a {
 .mat-column-cab_service_name {
     width: 50%;
 }
+
+.container {
+    padding-top: 60px;
+}
+
+.cab-container {
+    padding-top: 40px;
+}
+
+.cab-table {
+    padding-top: 20px;
+}

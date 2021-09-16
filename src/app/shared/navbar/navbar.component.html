@@ -5,22 +5,22 @@
                 <div ngbDropdown class="d-inline-block dropdown">
                     <a class="navbar-brand" id="recruitDropdown" ngbDropdownToggle>Why Recruit @IITG</a>
                     <div ngbDropdownMenu aria-labelledby="recruitDropdown" class="dropdown-primary">
-                        <a class="dropdown-item">About IITG</a>
+                        <a class="dropdown-item" [routerLink]="['about']">About IITG</a>
                         <a class="dropdown-item" [routerLink]="['academics']">Academics</a>
                         <a class="dropdown-item" [routerLink]="['graduating_students']">Graduating Students</a>
-                        <a class="dropdown-item">Research</a>
-                        <a class="dropdown-item">Achievements</a>
+                        <a class="dropdown-item" [routerLink]="['research']">Research</a>
+                        <a class="dropdown-item" [routerLink]="['achievements']">Achievements</a>
                     </div>
                 </div>
             <div ngbDropdown class="d-inline-block dropdown">
                 <a class="navbar-brand" id="companiesDropdown" ngbDropdownToggle>For Companies</a>
                 <div ngbDropdownMenu aria-labelledby="companiesDropdown" class="dropdown-primary">
                     <a class="dropdown-item" href="https://online.iitg.ac.in/tnp/">Placement Portal</a>
-                    <a class="dropdown-item">Brochure</a>
+                    <a class="dropdown-item" href="assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf">Brochure</a>
                     <a class="dropdown-item" [routerLink]="['process']">Placement Procedure</a>
                     <a class="dropdown-item" [routerLink]="['reaching_iitg']">Reaching IITG</a>
                     <a class="dropdown-item" [routerLink]="['hotels_and_cabs']">Hotels and Cabs</a>
-                    <a class="dropdown-item">Facilities</a>
+                    <a class="dropdown-item" [routerLink]="['facilities']">Facilities</a>
                 </div>
             </div>
             <div ngbDropdown class="d-inline-block dropdown">
@@ -30,7 +30,7 @@
                     <a class="dropdown-item" [routerLink]="['internship_policies']">Internship Policies</a>
                 </div>
             </div>
-            <a class="navbar-brand" href="https://www.creative-tim.com">Life at IITG</a>
+            <a class="navbar-brand" [routerLink]="['life_at_iitg']">Life at IITG</a>
             <div ngbDropdown class="d-inline-block dropdown">
                 <a class="navbar-brand" id="utilitiesDropdown" ngbDropdownToggle>Student Utilities</a>
                 <div ngbDropdownMenu aria-labelledby="utilitiesDropdown" class="dropdown-primary">

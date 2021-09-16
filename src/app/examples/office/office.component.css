@@ -51,3 +51,15 @@ p {
     color: black;
     font-weight: 400;
 }
+
+.address, .staff {
+    padding-top: 60px;
+}
+
+.emails {
+    padding-left: 18px;
+}
+
+.numbers {
+    padding-left: 10px;
+}

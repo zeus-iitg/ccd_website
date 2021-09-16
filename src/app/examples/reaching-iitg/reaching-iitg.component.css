@@ -19,3 +19,7 @@ a {
     font-weight: 500;
     color: dodgerblue;
 }
+
+.container {
+    padding-top: 60px;
+}

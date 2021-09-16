@@ -12,5 +12,31 @@ h4, li {
 }
 
 h4 {
+    padding-bottom: 15px;
+}
+
+a {
+    font-weight: 500;
+    color: dodgerblue;
+}
+
+.container {
+    padding-top: 60px;
+}
+
+ol li ul li {
+    padding-top: 5px;
+}
+
+ol li {
     padding-bottom: 10px;
+}
+
+.inner-list li {
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+li{
+    text-align: justify;
 }

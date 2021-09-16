@@ -1,5 +1,5 @@
 .title {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 a {
@@ -39,6 +39,10 @@ mark {
     font-weight: 600;
 }
 
+.text-center-hocccd {
+    text-align: center;
+}
+
 .title {
     font-weight: bold;
     color: #585858;
@@ -54,6 +58,15 @@ p {
     padding-left: 11px;
 }
 
+.mail-ids {
+    text-align: center;
+}
+
 .images-title {
     font-weight: 500;
+}
+
+h4, h5, p {
+    color: black;
+    font-weight: 400;
 }

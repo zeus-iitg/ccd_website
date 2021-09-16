@@ -6,7 +6,13 @@ mark {
     font-weight: 500;
 }
 
-p {
+p, li {
     color: black;
     font-weight: 400;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.container {
+    padding-top: 60px;
 }

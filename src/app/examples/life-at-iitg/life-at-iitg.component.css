@@ -1,0 +1,56 @@
+.page-header {
+    background-image: url("~assets/img/life_at_iitg/1.jpg");
+    animation: changeBackground 70s infinite;
+    animation-delay: 1s;
+}
+
+.preloader {
+    background-image: url("~assets/img/life_at_iitg/1.jpg");
+    animation: changeBackground 1s infinite;
+    height: 0;
+    width: 0;
+}
+
+@keyframes changeBackground {
+    0% {background-image: url("~assets/img/life_at_iitg/1.jpg");}
+    4% {background-image: url("~assets/img/life_at_iitg/2.jpg");}
+    9% {background-image: url("~assets/img/life_at_iitg/3.jpg");}
+    13% {background-image: url("~assets/img/life_at_iitg/4.jpg");}
+    18% {background-image: url("~assets/img/life_at_iitg/5.jpg");}
+    22% {background-image: url("~assets/img/life_at_iitg/6.jpg");}
+    26% {background-image: url("~assets/img/life_at_iitg/7.jpg");}
+    31% {background-image: url("~assets/img/life_at_iitg/8.jpg");}
+    35% {background-image: url("~assets/img/life_at_iitg/9.jpg");}
+    40% {background-image: url("~assets/img/life_at_iitg/10.jpg");}
+    44% {background-image: url("~assets/img/life_at_iitg/11.jpg");}
+    49% {background-image: url("~assets/img/life_at_iitg/12.jpg");}
+    53% {background-image: url("~assets/img/life_at_iitg/13.jpg");}
+    58% {background-image: url("~assets/img/life_at_iitg/14.jpg");}
+    62% {background-image: url("~assets/img/life_at_iitg/15.jpg");}
+    67% {background-image: url("~assets/img/life_at_iitg/16.jpg");}
+    71% {background-image: url("~assets/img/life_at_iitg/17.jpg");}
+    75% {background-image: url("~assets/img/life_at_iitg/18.jpg");}
+    80% {background-image: url("~assets/img/life_at_iitg/19.jpg");}
+    84% {background-image: url("~assets/img/life_at_iitg/20.jpg");}
+    89% {background-image: url("~assets/img/life_at_iitg/21.jpg");}
+    93% {background-image: url("~assets/img/life_at_iitg/22.jpg");}
+    97% {background-image: url("~assets/img/life_at_iitg/23.jpg");}
+    100% {background-image: url("~assets/img/life_at_iitg/1.jpg");}
+}
+
+mark {
+    background-color: yellow;
+}
+
+.images-title {
+    font-weight: 500;
+}
+
+h4, p {
+    color: black;
+    font-weight: 400;
+}
+
+h4 {
+    padding-bottom: 15px;
+}

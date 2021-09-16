@@ -42,7 +42,7 @@ mark {
 }
 
 .previous-team {
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 .images-title {
@@ -51,4 +51,12 @@ mark {
 
 p {
     color: black;
+}
+
+.placement, .internship {
+    padding-top: 60px;
+}
+
+.flex-container, .flex-container-2 {
+    padding-bottom: 20px;
 }

@@ -42,11 +42,13 @@
                     <p><a href="assets/documents/hotels%20list.pdf"> Document 1 </a></p>
                     <p><a href="assets/documents/Acco_Guwahati.pdf"> Document 2 </a></p>
                 </div>
+                <div class="cab-container">
                 <h3 class="images-title"><mark>Cabs</mark></h3>
                 <div class="cab-description">
                     <p><strong>Uber</strong> and <strong>Ola</strong> are readily available in Guwahati</p>
                     <p>Apart from them, you can contact the cab services listed below.</p>
                 </div>
+                    <div class="cab-table">
                 <table mat-table [dataSource]="cabDataSource" class="mat-elevation-z8">
 
                     <ng-container matColumnDef="cab_service_name">
@@ -62,6 +64,8 @@
                     <tr mat-header-row *matHeaderRowDef="cabDisplayedColumns"></tr>
                     <tr mat-row *matRowDef="let row; columns: cabDisplayedColumns;"></tr>
                 </table>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -6,12 +6,35 @@
     <div class="section profile-content">
         <div class="container">
             <div id="graduating-students">
+                <div class="UG">
                 <h3 class="images-title"><mark>Undergraduate Programme</mark></h3>
                 <div style="display: block">
                     <canvas baseChart
                             [data]="demoDoughnutChartData"
                             [labels]="doughnutChartLabels"
-                            [chartType]='doughnutChartType'></canvas>
+                            [chartType]="doughnutChartType"
+                            [plugins]="doughnutChartPlugins"
+                            [options]="options"></canvas>
+                </div>
+                </div>
+                <div class="PG">
+                <h3 class="images-title"><mark>Graduate Programme</mark></h3>
+                <div style="display: block">
+                    <canvas baseChart
+                            [data]="PGdemoDoughnutChartData"
+                            [labels]="PGdoughnutChartLabels"
+                            [chartType]="PGdoughnutChartType"
+                            [plugins]="PGdoughnutChartPlugins"
+                            [options]="options"></canvas>
+                </div>
+                <div style="display: block" class="second-chart">
+                    <canvas baseChart
+                            [data]="PGdemoDoughnutChartData2"
+                            [labels]="PGdoughnutChartLabels2"
+                            [chartType]="PGdoughnutChartType2"
+                            [plugins]="PGdoughnutChartPlugins2"
+                            [options]="options"></canvas>>
+                </div>
                 </div>
             </div>
         </div>

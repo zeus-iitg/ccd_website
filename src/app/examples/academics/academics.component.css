@@ -14,3 +14,23 @@ p, li, h4, h5 {
 h4 {
     padding-bottom: 20px;
 }
+
+.container {
+    padding-top: 60px;
+}
+
+.UG {
+    padding-top: 40px;
+}
+
+.UG h4 {
+    padding-bottom: 40px;
+}
+
+.PG h4 {
+    padding-bottom: 40px;
+}
+
+.PG {
+    padding-top: 40px;
+}

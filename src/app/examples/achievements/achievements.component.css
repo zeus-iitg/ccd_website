@@ -1,0 +1,20 @@
+mark {
+    background-color: yellow;
+}
+
+.images-title {
+    font-weight: 500;
+}
+
+.container {
+    padding-top: 60px;
+}
+
+.mat-cell {
+    padding-right: 20px;
+}
+
+th, td {
+    color: black;
+    font-weight: 400;
+}

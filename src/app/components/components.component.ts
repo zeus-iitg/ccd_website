@@ -1,5 +1,4 @@
 import {Component, OnInit, Renderer2, ViewEncapsulation, Input} from '@angular/core';
-import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 import {OwlOptions} from 'ngx-owl-carousel-o';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
@@ -7,20 +6,19 @@ import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
     selector: 'app-modal-content',
     template: `
     <div class="modal-header">
-        <h5 class="modal-title text-center">Placement Reports</h5>
+        <h5 class="modal-title text-center">{{modal_heading}}</h5>
         <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
         </button>
     </div>
-    <div class="modal-body">
-        <p><a href=""> Placement Statistics 2019-20 </a></p>
-        <p><a href=""> Placement Statistics 2018-19 </a></p>
-        <p><a href=""> Placement Statistics 2017-18 </a></p>
-    </div>
+    <div class="modal-body" [innerHTML]="modal_body"></div>
     `
 })
-export class NgbdModalContent {
-    @Input() name;
+export class NgbModalContent {
+
+    @Input() modal_heading: string;
+
+    @Input() modal_body: string;
 
     constructor(public activeModal: NgbActiveModal) {}
 }
@@ -226,63 +224,65 @@ export class ComponentsComponent implements OnInit {
         }
     ]
 
-    page = 4;
-    page1 = 5;
-    focus;
-    focus1;
-    focus2;
-    date: {year: number, month: number};
-    model: NgbDateStruct;
-    studentcount = 47;
-    facultycount = 6;
-    staffcount = 10;
-
-    studentcountstop: any = setInterval(() => {
-        this.studentcount += 35;
-        if (this.studentcount == 7047) {
-            clearInterval(this.studentcountstop);
-        }
-    }, 10)
-
-    facultycountstop: any = setInterval(() => {
-        this.facultycount += 2;
-        if (this.facultycount == 406) {
-            clearInterval(this.facultycountstop);
-        }
-    }, 10)
-
-    staffcountstop: any = setInterval(() => {
-        this.staffcount += 5;
-        if (this.staffcount == 510) {
-            clearInterval(this.staffcountstop);
-        }
-    }, 20)
+    // studentcount = 47;
+    // facultycount = 6;
+    // staffcount = 10;
+    //
+    // studentcountstop: any = setInterval(() => {
+    //     this.studentcount += 35;
+    //     if (this.studentcount === 7047) {
+    //         clearInterval(this.studentcountstop);
+    //     }
+    // }, 10)
+    //
+    // facultycountstop: any = setInterval(() => {
+    //     this.facultycount += 2;
+    //     if (this.facultycount === 406) {
+    //         clearInterval(this.facultycountstop);
+    //     }
+    // }, 10)
+    //
+    // staffcountstop: any = setInterval(() => {
+    //     this.staffcount += 5;
+    //     if (this.staffcount === 510) {
+    //         clearInterval(this.staffcountstop);
+    //     }
+    // }, 20)
 
     constructor( private renderer: Renderer2, private modalService: NgbModal) {}
     open() {
-        const modalRef = this.modalService.open(NgbdModalContent);
-        modalRef.componentInstance.name = 'World';
-    }
-    isWeekend(date: NgbDateStruct) {
-        const d = new Date(date.year, date.month - 1, date.day);
-        return d.getDay() === 0 || d.getDay() === 6;
+        const modalRef = this.modalService.open(NgbModalContent);
+        modalRef.componentInstance.modal_heading = 'Placement Reports';
+        modalRef.componentInstance.modal_body = `
+        <p><a href=""> Placement Statistics 2020-21 </a></p>
+        <p><a href="../../assets/documents/Placement_statistics_2019_20.pdf"> Placement Statistics 2019-20 </a></p>
+        <p><a href="../../assets/documents/Placement_statistics_2018_19.pdf"> Placement Statistics 2018-19 </a></p>
+        <p><a href="../../assets/documents/Placement_statistics_2017_18.pdf"> Placement Statistics 2017-18 </a></p>
+        `
     }
 
-    isDisabled(date: NgbDateStruct, current: {month: number}) {
-        return date.month !== current.month;
+    open2() {
+        const modalRef = this.modalService.open(NgbModalContent);
+        modalRef.componentInstance.modal_heading = 'Internship NOC Application form';
+        modalRef.componentInstance.modal_body = `
+        <div class="internship-noc">
+            <div class="format">
+                <a href="../../assets/documents/Application-form-for-NOC-for-Internship.pdf">
+                    <img src="../../assets/img/Icons/PDF_file_icon.png" height="100" alt="PDF">
+                    <p>Download PDF</p>
+                </a>
+            </div>
+            <div class="format">
+                <a href="../../assets/documents/Application-form-for-NOC-for-Internship.doc">
+                    <img src="../../assets/img/Icons/docx_icon.png" height="100" alt="DOC">
+                    <p>Download DOC</p>
+                </a>
+            </div>
+        </div>
+        `
     }
 
     ngOnInit() {
-        const input_group_focus = document.getElementsByClassName('form-control');
-        const input_group = document.getElementsByClassName('input-group');
-        for (let i = 0; i < input_group.length; i++) {
-            input_group[i].children[0].addEventListener('focus', function () {
-                input_group[i].classList.add('input-group-focus');
-            });
-            input_group[i].children[0].addEventListener('blur', function () {
-                input_group[i].classList.remove('input-group-focus');
-            });
-        }
     }
 
 }
