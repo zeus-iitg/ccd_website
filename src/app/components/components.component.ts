@@ -255,9 +255,9 @@ export class ComponentsComponent implements OnInit {
         modalRef.componentInstance.modal_heading = 'Placement Reports';
         modalRef.componentInstance.modal_body = `
         <p><a href=""> Placement Statistics 2020-21 </a></p>
-        <p><a href="../../assets/documents/Placement_statistics_2019_20.pdf"> Placement Statistics 2019-20 </a></p>
-        <p><a href="../../assets/documents/Placement_statistics_2018_19.pdf"> Placement Statistics 2018-19 </a></p>
-        <p><a href="../../assets/documents/Placement_statistics_2017_18.pdf"> Placement Statistics 2017-18 </a></p>
+        <p><a href="../../assets/documents/Placement_statistics_2019_20.pdf" target="_blank"> Placement Statistics 2019-20 </a></p>
+        <p><a href="../../assets/documents/Placement_statistics_2018_19.pdf" target="_blank"> Placement Statistics 2018-19 </a></p>
+        <p><a href="../../assets/documents/Placement_statistics_2017_18.pdf" target="_blank"> Placement Statistics 2017-18 </a></p>
         `
     }
 
@@ -267,13 +267,13 @@ export class ComponentsComponent implements OnInit {
         modalRef.componentInstance.modal_body = `
         <div class="internship-noc">
             <div class="format">
-                <a href="../../assets/documents/Application-form-for-NOC-for-Internship.pdf">
+                <a href="../../assets/documents/Application-form-for-NOC-for-Internship.pdf" target="_blank">
                     <img src="../../assets/img/Icons/PDF_file_icon.png" height="100" alt="PDF">
                     <p>Download PDF</p>
                 </a>
             </div>
             <div class="format">
-                <a href="../../assets/documents/Application-form-for-NOC-for-Internship.doc">
+                <a href="../../assets/documents/Application-form-for-NOC-for-Internship.doc" target="_blank">
                     <img src="../../assets/img/Icons/docx_icon.png" height="100" alt="DOC">
                     <p>Download DOC</p>
                 </a>

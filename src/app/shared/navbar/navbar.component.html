@@ -3,7 +3,7 @@
         <div class="navbar-translate">
             <a class="navbar-brand" [routerLink]="['home']">Home</a>
                 <div ngbDropdown class="d-inline-block dropdown">
-                    <a class="navbar-brand" id="recruitDropdown" ngbDropdownToggle>Why Recruit @IITG</a>
+                    <a class="navbar-brand" [routerLink]="" id="recruitDropdown" ngbDropdownToggle>Why Recruit @IITG</a>
                     <div ngbDropdownMenu aria-labelledby="recruitDropdown" class="dropdown-primary">
                         <a class="dropdown-item" [routerLink]="['about']">About IITG</a>
                         <a class="dropdown-item" [routerLink]="['academics']">Academics</a>
@@ -13,10 +13,10 @@
                     </div>
                 </div>
             <div ngbDropdown class="d-inline-block dropdown">
-                <a class="navbar-brand" id="companiesDropdown" ngbDropdownToggle>For Companies</a>
+                <a class="navbar-brand" [routerLink]="" id="companiesDropdown" ngbDropdownToggle>For Companies</a>
                 <div ngbDropdownMenu aria-labelledby="companiesDropdown" class="dropdown-primary">
-                    <a class="dropdown-item" href="https://online.iitg.ac.in/tnp/">Placement Portal</a>
-                    <a class="dropdown-item" href="assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf">Brochure</a>
+                    <a class="dropdown-item" href="https://online.iitg.ac.in/tnp/" target="_blank">Placement Portal</a>
+                    <a class="dropdown-item" href="assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf" target="_blank">Brochure</a>
                     <a class="dropdown-item" [routerLink]="['process']">Placement Procedure</a>
                     <a class="dropdown-item" [routerLink]="['reaching_iitg']">Reaching IITG</a>
                     <a class="dropdown-item" [routerLink]="['hotels_and_cabs']">Hotels and Cabs</a>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div ngbDropdown class="d-inline-block dropdown">
-                <a class="navbar-brand" id="policiesDropdown" ngbDropdownToggle>Policies</a>
+                <a class="navbar-brand" [routerLink]="" id="policiesDropdown" ngbDropdownToggle>Policies</a>
                 <div ngbDropdownMenu aria-labelledby="policiesDropdown" class="dropdown-primary">
                     <a class="dropdown-item" [routerLink]="['placement_policies']">Placement Policies</a>
                     <a class="dropdown-item" [routerLink]="['internship_policies']">Internship Policies</a>
@@ -32,16 +32,16 @@
             </div>
             <a class="navbar-brand" [routerLink]="['life_at_iitg']">Life at IITG</a>
             <div ngbDropdown class="d-inline-block dropdown">
-                <a class="navbar-brand" id="utilitiesDropdown" ngbDropdownToggle>Student Utilities</a>
+                <a class="navbar-brand" [routerLink]="" id="utilitiesDropdown" ngbDropdownToggle>Student Utilities</a>
                 <div ngbDropdownMenu aria-labelledby="utilitiesDropdown" class="dropdown-primary">
-                    <a class="dropdown-item" href="https://www.iitg.ac.in/ccd/pages/masterCV.html">Master CV</a>
-                    <a class="dropdown-item" href="http://nitish.site/resume-generator/">Resume Generator</a>
-                    <a class="dropdown-item" href="https://www.overleaf.com/latex/templates/iit-guwahati-resume/fvqtppmzhvxn?fbclid=IwAR3YOIkCowbs6yM56MQfaDDV2woMRk0anzixUDFdAYLZZxFQ_A2VlND6IDw">Latex CV template</a>
+                    <a class="dropdown-item" href="https://www.iitg.ac.in/ccd/pages/masterCV.html" target="_blank">Master CV</a>
+                    <a class="dropdown-item" href="http://nitish.site/resume-generator/" target="_blank">Resume Generator</a>
+                    <a class="dropdown-item" href="https://www.overleaf.com/latex/templates/iit-guwahati-resume/fvqtppmzhvxn?fbclid=IwAR3YOIkCowbs6yM56MQfaDDV2woMRk0anzixUDFdAYLZZxFQ_A2VlND6IDw" target="_blank">Latex CV template</a>
                 </div>
             </div>
             <a class="navbar-brand" [routerLink]="['faqs']">FAQ</a>
             <div ngbDropdown class="d-inline-block dropdown">
-                <a class="navbar-brand" id="contactDropdown" ngbDropdownToggle>Contact Us</a>
+                <a class="navbar-brand" [routerLink]="" id="contactDropdown" ngbDropdownToggle>Contact Us</a>
                 <div ngbDropdownMenu aria-labelledby="contactDropdown" class="dropdown-primary">
                     <a class="dropdown-item" [routerLink]="['hocccd']">Head of the Centre</a>
                     <a class="dropdown-item" [routerLink]="['faculty']">Faculty Coordinators</a>

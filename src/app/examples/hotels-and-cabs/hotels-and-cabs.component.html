@@ -26,7 +26,7 @@
 
                     <ng-container matColumnDef="display_link">
                         <th mat-header-cell *matHeaderCellDef> Website </th>
-                        <td mat-cell *matCellDef="let hotel"> <a href="{{hotel.link}}"> {{hotel.display_link}} </a> </td>
+                        <td mat-cell *matCellDef="let hotel"> <a href="{{hotel.link}}" target="_blank"> {{hotel.display_link}} </a> </td>
                     </ng-container>
 
                     <ng-container matColumnDef="distance">
@@ -39,8 +39,8 @@
                 </table>
                 <div class="additional-hotels">
                     <p>For more hotels, refer the below documents:</p>
-                    <p><a href="assets/documents/hotels%20list.pdf"> Document 1 </a></p>
-                    <p><a href="assets/documents/Acco_Guwahati.pdf"> Document 2 </a></p>
+                    <p><a href="assets/documents/hotels%20list.pdf" target="_blank"> Document 1 </a></p>
+                    <p><a href="assets/documents/Acco_Guwahati.pdf" target="_blank"> Document 2 </a></p>
                 </div>
                 <div class="cab-container">
                 <h3 class="images-title"><mark>Cabs</mark></h3>
