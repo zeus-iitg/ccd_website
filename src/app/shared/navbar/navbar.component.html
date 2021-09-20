@@ -2,7 +2,7 @@
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" [routerLink]="['home']">Home</a>
-                <div ngbDropdown class="d-inline-block dropdown">
+                <div ngbDropdown class="d-inline-block dropdown" #myDropRecruit="ngbDropdown" on-mouseover="$event.stopPropagation(); myDropRecruit.open();" on-mouseleave="$event.stopPropagation(); myDropRecruit.close();">
                     <a class="navbar-brand" [routerLink]="" id="recruitDropdown" ngbDropdownToggle>Why Recruit @IITG</a>
                     <div ngbDropdownMenu aria-labelledby="recruitDropdown" class="dropdown-primary">
                         <a class="dropdown-item" [routerLink]="['about']">About IITG</a>
@@ -12,7 +12,7 @@
                         <a class="dropdown-item" [routerLink]="['achievements']">Achievements</a>
                     </div>
                 </div>
-            <div ngbDropdown class="d-inline-block dropdown">
+            <div ngbDropdown class="d-inline-block dropdown" #myDropCompany="ngbDropdown" on-mouseover="$event.stopPropagation(); myDropCompany.open();" on-mouseleave="$event.stopPropagation(); myDropCompany.close();">
                 <a class="navbar-brand" [routerLink]="" id="companiesDropdown" ngbDropdownToggle>For Companies</a>
                 <div ngbDropdownMenu aria-labelledby="companiesDropdown" class="dropdown-primary">
                     <a class="dropdown-item" href="https://online.iitg.ac.in/tnp/" target="_blank">Placement Portal</a>
@@ -23,7 +23,7 @@
                     <a class="dropdown-item" [routerLink]="['facilities']">Facilities</a>
                 </div>
             </div>
-            <div ngbDropdown class="d-inline-block dropdown">
+            <div ngbDropdown class="d-inline-block dropdown" #myDropPolicy="ngbDropdown" on-mouseover="$event.stopPropagation(); myDropPolicy.open();" on-mouseleave="$event.stopPropagation(); myDropPolicy.close();">
                 <a class="navbar-brand" [routerLink]="" id="policiesDropdown" ngbDropdownToggle>Policies</a>
                 <div ngbDropdownMenu aria-labelledby="policiesDropdown" class="dropdown-primary">
                     <a class="dropdown-item" [routerLink]="['placement_policies']">Placement Policies</a>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <a class="navbar-brand" [routerLink]="['life_at_iitg']">Life at IITG</a>
-            <div ngbDropdown class="d-inline-block dropdown">
+            <div ngbDropdown class="d-inline-block dropdown" #myDropUtil="ngbDropdown" on-mouseover="$event.stopPropagation(); myDropUtil.open();" on-mouseleave="$event.stopPropagation(); myDropUtil.close();">
                 <a class="navbar-brand" [routerLink]="" id="utilitiesDropdown" ngbDropdownToggle>Student Utilities</a>
                 <div ngbDropdownMenu aria-labelledby="utilitiesDropdown" class="dropdown-primary">
                     <a class="dropdown-item" href="https://www.iitg.ac.in/ccd/pages/masterCV.html" target="_blank">Master CV</a>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <a class="navbar-brand" [routerLink]="['faqs']">FAQ</a>
-            <div ngbDropdown class="d-inline-block dropdown">
+            <div ngbDropdown class="d-inline-block dropdown" #myDropContact="ngbDropdown" on-mouseover="$event.stopPropagation(); myDropContact.open();" on-mouseleave="$event.stopPropagation(); myDropContact.close();">
                 <a class="navbar-brand" [routerLink]="" id="contactDropdown" ngbDropdownToggle>Contact Us</a>
                 <div ngbDropdownMenu aria-labelledby="contactDropdown" class="dropdown-primary">
                     <a class="dropdown-item" [routerLink]="['hocccd']">Head of the Centre</a>
