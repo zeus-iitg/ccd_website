@@ -254,7 +254,7 @@ export class ComponentsComponent implements OnInit {
         const modalRef = this.modalService.open(NgbModalContent);
         modalRef.componentInstance.modal_heading = 'Placement Reports';
         modalRef.componentInstance.modal_body = `
-        <p><a href=""> Placement Statistics 2020-21 </a></p>
+        <p><a href="../../assets/documents/Placement_statistics_2020_21.pdf" target="_blank"> Placement Statistics 2020-21 </a></p>
         <p><a href="../../assets/documents/Placement_statistics_2019_20.pdf" target="_blank"> Placement Statistics 2019-20 </a></p>
         <p><a href="../../assets/documents/Placement_statistics_2018_19.pdf" target="_blank"> Placement Statistics 2018-19 </a></p>
         <p><a href="../../assets/documents/Placement_statistics_2017_18.pdf" target="_blank"> Placement Statistics 2017-18 </a></p>
