@@ -143,7 +143,7 @@ export class ComponentsComponent implements OnInit {
     ]
 
     customOptions: OwlOptions = {
-        items: 7,
+        // items: 7,
         loop: true,
         autoplay: true,
         autoplayTimeout: 1200,
@@ -155,20 +155,20 @@ export class ComponentsComponent implements OnInit {
         dots: false,
         navSpeed: 600,
         navText: ['&#8249', '&#8250;'],
-        // responsive: {
-        //     0: {
-        //         items: 1
-        //     },
-        //     400: {
-        //         items: 2
-        //     },
-        //     760: {
-        //         items: 3
-        //     },
-        //     1000: {
-        //         items: 4
-        //     }
-        // }
+        responsive: {
+            0: {
+                items: 1
+            },
+            400: {
+                items: 3
+            },
+            760: {
+                items: 5
+            },
+            1000: {
+                items: 7
+            }
+        }
     }
 
     testimonialsOptions: OwlOptions = {
