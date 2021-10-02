@@ -254,10 +254,10 @@ export class ComponentsComponent implements OnInit {
         const modalRef = this.modalService.open(NgbModalContent);
         modalRef.componentInstance.modal_heading = 'Placement Reports';
         modalRef.componentInstance.modal_body = `
-        <p><a href="../../assets/documents/Placement_statistics_2020_21.pdf" target="_blank"> Placement Statistics 2020-21 </a></p>
-        <p><a href="../../assets/documents/Placement_statistics_2019_20.pdf" target="_blank"> Placement Statistics 2019-20 </a></p>
-        <p><a href="../../assets/documents/Placement_statistics_2018_19.pdf" target="_blank"> Placement Statistics 2018-19 </a></p>
-        <p><a href="../../assets/documents/Placement_statistics_2017_18.pdf" target="_blank"> Placement Statistics 2017-18 </a></p>
+        <p><a href="../../assets/documents/Placement_reports_2020_21.pdf" target="_blank"> Placement reports 2020-21 </a></p>
+        <p><a href="../../assets/documents/Placement_reports_2019_20.pdf" target="_blank"> Placement reports 2019-20 </a></p>
+        <p><a href="../../assets/documents/Placement_reports_2018_19.pdf" target="_blank"> Placement reports 2018-19 </a></p>
+        <p><a href="../../assets/documents/Placement_reports_2017_18.pdf" target="_blank"> Placement reports 2017-18 </a></p>
         `
     }
 
@@ -269,13 +269,61 @@ export class ComponentsComponent implements OnInit {
             <div class="format">
                 <a href="../../assets/documents/Application-form-for-NOC-for-Internship.pdf" target="_blank">
                     <img src="../../assets/img/Icons/PDF_file_icon.png" height="100" alt="PDF">
-                    <p>Download PDF</p>
+                    <p class="modal-caption">Download PDF</p>
                 </a>
             </div>
             <div class="format">
                 <a href="../../assets/documents/Application-form-for-NOC-for-Internship.doc" target="_blank">
                     <img src="../../assets/img/Icons/docx_icon.png" height="100" alt="DOC">
-                    <p>Download DOC</p>
+                    <p class="modal-caption">Download DOC</p>
+                </a>
+            </div>
+        </div>
+        `
+    }
+
+    open3() {
+        const modalRef = this.modalService.open(NgbModalContent);
+        modalRef.componentInstance.modal_heading = 'Brochures';
+        modalRef.componentInstance.modal_body = `
+        <div class="internship-noc">
+            <div class="format">
+                <a href="../../assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf" target="_blank">
+                    <img src="../../assets/img/Icons/academic%20placement%20brochure.png" height="100" alt="Placement Brochure">
+                    <p class="modal-caption">Placement <br /> Brochure</p>
+                </a>
+            </div>
+            <div class="format">
+                <a href="../../assets/documents/Academic%20Brochure.pdf" target="_blank">
+                    <img src="../../assets/img/Icons/academic%20placement%20brochure.png" height="100" alt="Academic Placement Brochure">
+                    <p class="modal-caption">Academic Placement <br /> Brochure</p>
+                </a>
+            </div>
+        </div>
+        `
+    }
+
+    open4() {
+        const modalRef = this.modalService.open(NgbModalContent);
+        modalRef.componentInstance.modal_heading = 'Policies';
+        modalRef.componentInstance.modal_body = `
+        <div class="policies">
+            <div class="format">
+                <a href="../../assets/documents/Internship_Policies_2021_22.pdf" target="_blank">
+                    <img src="../../assets/img/Icons/policies.png" height="100" alt="Internship Policies 2021-22">
+                    <p class="modal-caption">Internship <br /> Policies <br /> 2021 - 2022</p>
+                </a>
+            </div>
+            <div class="format">
+                <a href="../../assets/documents/Placement_Policies_2021_22.pdf" target="_blank">
+                    <img src="../../assets/img/Icons/policies.png" height="100" alt="Placement Policies 2021-22">
+                    <p class="modal-caption">Placement <br /> Policies <br /> 2021 - 2022</p>
+                </a>
+            </div>
+            <div class="format">
+                <a href="../../assets/documents/Full_Time_Hiring_Policy_2021_22_(student_side).pdf" target="_blank">
+                    <img src="../../assets/img/Icons/policies.png" height="100" alt="Placement Policies for students 2021 - 2022">
+                    <p class="modal-caption">Placement Policies <br /> for students <br /> 2021 - 2022</p>
                 </a>
             </div>
         </div>

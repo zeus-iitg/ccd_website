@@ -170,10 +170,23 @@ a {
   justify-content: space-evenly;
 }
 
-.modal-body .internship-noc .format {
+.modal-body .policies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-body .internship-noc .format p,
+.modal-body .policies .format p {
+  padding-top: 15px;
+}
+
+.modal-body .internship-noc .format .modal-caption,
+.modal-body .policies .format .modal-caption {
   text-align: center;
 }
 
-.modal-body .internship-noc .format p {
-  padding-top: 15px;
+.modal-body .internship-noc .format img,
+.modal-body .policies .format img {
+  display:block;
+  margin:auto;
 }

@@ -64,9 +64,9 @@
                           </mat-grid-tile>
                           <mat-grid-tile>
                               <figure class="brochure">
-                                  <a href="assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf" target="_blank">
+                                  <a [routerLink]="" (click)="open3()">
                                       <img class="tile-image" src="assets/img/Icons/placement%20brochure.png" />
-                                      <figcaption class="caption"><h6>Placement <br /> Brochure</h6></figcaption>
+                                      <figcaption class="caption"><h6>Brochures</h6></figcaption>
                                   </a>
                               </figure>
                           </mat-grid-tile>
@@ -98,14 +98,14 @@
                           <mat-card-title>Downloads</mat-card-title>
                       </mat-card-header>
                       <mat-grid-list cols="2" rowHeight="280px">
-                          <mat-grid-tile>
+                          <!--<mat-grid-tile>
                               <figure class="internship">
                                   <a href="assets/documents/Academic%20Brochure.pdf" target="_blank">
                                       <img class="tile-image" src="assets/img/Icons/academic%20placement%20brochure.png"/>
                                       <figcaption class="caption"><h6>Academic Placement <br /> Brochure</h6></figcaption>
                                   </a>
                               </figure>
-                          </mat-grid-tile>
+                          </mat-grid-tile>-->
                           <!--<mat-grid-tile>
                               <figure class="brochure">
                                   <a href="#">
@@ -115,7 +115,7 @@
                               </figure>
                           </mat-grid-tile>-->
                           <mat-grid-tile>
-                              <figure class="brochure">
+                              <figure class="internship">
                                   <a [routerLink]="" (click)="open()">
                                       <img class="tile-image" src="assets/img/Icons/placement%20reports.png" />
                                       <figcaption class="caption"><h6>Placement <br /> Reports</h6></figcaption>
@@ -123,10 +123,26 @@
                               </figure>
                           </mat-grid-tile>
                           <mat-grid-tile>
-                              <figure class="guidelines">
+                              <figure class="brochure">
                                   <a [routerLink]="" (click)="open2()">
                                       <img class="tile-image" src="assets/img/Icons/noc%20certificate.png" />
                                       <figcaption class="caption"><h6>Internship NOC <br /> Application form</h6></figcaption>
+                                  </a>
+                              </figure>
+                          </mat-grid-tile>
+                          <mat-grid-tile>
+                              <figure class="team">
+                                  <a [routerLink]="" (click)="open4()">
+                                      <img class="tile-image" src="assets/img/Icons/policies.png" />
+                                      <figcaption class="caption"><h6>Policies</h6></figcaption>
+                                  </a>
+                              </figure>
+                          </mat-grid-tile>
+                          <mat-grid-tile>
+                              <figure class="guidelines">
+                                  <a href="assets/documents/Full%20Time%20JAF%20IITG.pdf" target="_blank">
+                                      <img class="tile-image" src="assets/img/Icons/offline%20jafs.png" />
+                                      <figcaption class="caption"><h6>Offline JAF</h6></figcaption>
                                   </a>
                               </figure>
                           </mat-grid-tile>
