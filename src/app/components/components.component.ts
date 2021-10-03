@@ -289,7 +289,7 @@ export class ComponentsComponent implements OnInit {
         <div class="internship-noc">
             <div class="format">
                 <a href="../../assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf" target="_blank">
-                    <img src="../../assets/img/Icons/academic%20placement%20brochure.png" height="100" alt="Placement Brochure">
+                    <img src="../../assets/img/Icons/placement%20brochure.png" height="100" width="100" alt="Placement Brochure">
                     <p class="modal-caption">Placement <br /> Brochure</p>
                 </a>
             </div>
@@ -310,19 +310,19 @@ export class ComponentsComponent implements OnInit {
         <div class="policies">
             <div class="format">
                 <a href="../../assets/documents/Internship_Policies_2021_22.pdf" target="_blank">
-                    <img src="../../assets/img/Icons/policies.png" height="100" alt="Internship Policies 2021-22">
+                    <img src="../../assets/img/Icons/internship%20policies.png" height="100" alt="Internship Policies 2021-22">
                     <p class="modal-caption">Internship <br /> Policies <br /> 2021 - 2022</p>
                 </a>
             </div>
             <div class="format">
                 <a href="../../assets/documents/Placement_Policies_2021_22.pdf" target="_blank">
-                    <img src="../../assets/img/Icons/policies.png" height="100" alt="Placement Policies 2021-22">
+                    <img src="../../assets/img/Icons/placement%20policies.png" height="100" alt="Placement Policies 2021-22">
                     <p class="modal-caption">Placement <br /> Policies <br /> 2021 - 2022</p>
                 </a>
             </div>
             <div class="format">
                 <a href="../../assets/documents/Full_Time_Hiring_Policy_2021_22_(student_side).pdf" target="_blank">
-                    <img src="../../assets/img/Icons/policies.png" height="100" alt="Placement Policies for students 2021 - 2022">
+                    <img src="../../assets/img/Icons/student%20policies.png" height="100" alt="Placement Policies for students 2021 - 2022">
                     <p class="modal-caption">Placement Policies <br /> for students <br /> 2021 - 2022</p>
                 </a>
             </div>
