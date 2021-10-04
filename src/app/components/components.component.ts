@@ -308,6 +308,9 @@ export class ComponentsComponent implements OnInit {
         modalRef.componentInstance.modal_heading = 'Policies';
         modalRef.componentInstance.modal_body = `
         <div class="policies">
+            <div class="company-side">
+            <p class="heading"><h6>For Companies</h6></p>
+            <div class="company-brochures">
             <div class="format">
                 <a href="../../assets/documents/Internship_Policies_2021_22.pdf" target="_blank">
                     <img src="../../assets/img/Icons/internship%20policies.png" height="100" alt="Internship Policies 2021-22">
@@ -320,11 +323,16 @@ export class ComponentsComponent implements OnInit {
                     <p class="modal-caption">Placement <br /> Policies <br /> 2021 - 2022</p>
                 </a>
             </div>
+            </div>
+            </div>
+            <div class="student-side">
+            <p class="heading"><h6>For Students</h6></p>
             <div class="format">
                 <a href="../../assets/documents/Full_Time_Hiring_Policy_2021_22_(student_side).pdf" target="_blank">
                     <img src="../../assets/img/Icons/student%20policies.png" height="100" alt="Placement Policies for students 2021 - 2022">
-                    <p class="modal-caption">Placement Policies <br /> for students <br /> 2021 - 2022</p>
+                    <p class="modal-caption">Placement <br /> Policies <br /> 2021 - 2022</p>
                 </a>
+            </div>
             </div>
         </div>
         `

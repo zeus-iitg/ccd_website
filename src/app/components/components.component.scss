@@ -170,7 +170,8 @@ a {
   justify-content: space-evenly;
 }
 
-.modal-body .policies {
+.modal-body .policies,
+.modal-body .policies .company-side .company-brochures {
   display: flex;
   justify-content: space-between;
 }
@@ -181,12 +182,45 @@ a {
 }
 
 .modal-body .internship-noc .format .modal-caption,
-.modal-body .policies .format .modal-caption {
+.modal-body .policies .company-side .format .modal-caption,
+.modal-body .policies .student-side .format .modal-caption,
+.modal-body .policies .company-side h6,
+.modal-body .policies .student-side h6 {
   text-align: center;
 }
 
+.modal-body .policies .company-side h6,
+.modal-body .policies .student-side h6 {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
 .modal-body .internship-noc .format img,
-.modal-body .policies .format img {
+.modal-body .policies .company-side .format img,
+.modal-body .policies .student-side .format img {
   display:block;
   margin:auto;
+}
+
+.modal-content .policies .company-side {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 60%;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #014c8c;
+}
+
+.modal-content .policies .student-side {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 35%;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #014c8c;
+}
+
+.modal-content .policies .company-side .format .modal-caption,
+.modal-content .policies .student-side .format .modal-caption {
+  padding-bottom: 10px;
 }
