@@ -59,7 +59,7 @@
     </div>
 </nav>
 <div class="topnav">
-    <a [routerLink]="['home']" class="active">Home</a>
+    <a [routerLink]="['home']" (click)="closeNavbar()" class="active">Home</a>
     <div class="navbar-menu" [style.display]="display" [style.background-color]="'white'">
         <a class="navbar-tabs" [routerLink]="" (click)="dropSubMenu('why_recruit')">Why Recruit @IITG</a>
         <div class="navbar-submenu" [style.display]="dropdown === 'why_recruit' ? 'block' : 'none'">

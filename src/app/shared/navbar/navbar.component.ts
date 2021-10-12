@@ -28,6 +28,10 @@ export class NavbarComponent implements OnInit {
             this.display = 'block';
         }
     }
+    closeNavbar() {
+        this.display = 'none';
+        this.dropdown = 'none';
+    }
     dropSubMenu(s: string) {
         if (this.dropdown === s) {
             this.dropdown = 'none';
