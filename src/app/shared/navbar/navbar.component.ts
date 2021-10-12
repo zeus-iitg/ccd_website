@@ -7,6 +7,8 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
     styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+    dropdown = 'none';
+    display = 'none';
     private toggleButton: any;
     private sidebarVisible: boolean;
 
@@ -17,6 +19,21 @@ export class NavbarComponent implements OnInit {
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+    }
+    toggleNavbar() {
+        if (this.display === 'block') {
+            this.display = 'none';
+            this.dropdown = 'none';
+        } else {
+            this.display = 'block';
+        }
+    }
+    dropSubMenu(s: string) {
+        if (this.dropdown === s) {
+            this.dropdown = 'none';
+        } else {
+            this.dropdown = s;
+        }
     }
     sidebarOpen() {
         const toggleButton = this.toggleButton;

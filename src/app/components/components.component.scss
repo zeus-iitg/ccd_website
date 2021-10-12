@@ -142,6 +142,36 @@ pre {
 .first-row {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .first-row {
+    flex-direction: column;
+  }
+  .part-1, .part-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-md-6 {
+    max-width: 70% !important;
+    align-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-md-6 {
+    max-width: 100% !important;
+    align-self: center;
+  }
 }
 
 .item {
@@ -223,4 +253,21 @@ a {
 .modal-content .policies .company-side .format .modal-caption,
 .modal-content .policies .student-side .format .modal-caption {
   padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .item .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .item .row .col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rounded-image {
+    width: 50%;
+  }
 }

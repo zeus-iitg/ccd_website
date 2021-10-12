@@ -56,6 +56,59 @@
                 <i class="fa fa-linkedin"></i>
             </a>
         </div>
-
     </div>
 </nav>
+<div class="topnav">
+    <a [routerLink]="['home']" class="active">Home</a>
+    <div class="navbar-menu" [style.display]="display" [style.background-color]="'white'">
+        <a class="navbar-tabs" [routerLink]="" (click)="dropSubMenu('why_recruit')">Why Recruit @IITG</a>
+        <div class="navbar-submenu" [style.display]="dropdown === 'why_recruit' ? 'block' : 'none'">
+            <a class="navbar-submenu-tabs" [routerLink]="['about']" (click)="toggleNavbar()">About IITG</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['academics']" (click)="toggleNavbar()">Academics</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['graduating_students']" (click)="toggleNavbar()">Graduating Students</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['research']" (click)="toggleNavbar()">Research</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['achievements']" (click)="toggleNavbar()">Achievements</a>
+        </div>
+
+        <a class="navbar-tabs" [routerLink]="" (click)="dropSubMenu('for_companies')">For Companies</a>
+        <div class="navbar-submenu" [style.display]="dropdown === 'for_companies' ? 'block' : 'none'">
+            <a class="navbar-submenu-tabs" href="https://online.iitg.ac.in/tnp/" target="_blank" (click)="toggleNavbar()">Placement Portal</a>
+            <a class="navbar-submenu-tabs" href="assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf" target="_blank" (click)="toggleNavbar()">Brochure</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['process']" (click)="toggleNavbar()">Placement Procedure</a>
+            <a class="navbar-submenu-tabs" href="assets/documents/Internship_Policies_2021_22.pdf" target="_blank" (click)="toggleNavbar()">Internship Policies 2021-22</a>
+            <a class="navbar-submenu-tabs" href="assets/documents/Placement_Policies_2021_22.pdf" target="_blank" (click)="toggleNavbar()">Placement Policies 2021-22</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['reaching_iitg']" (click)="toggleNavbar()">Reaching IITG</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['hotels_and_cabs']" (click)="toggleNavbar()">Hotels and Cabs</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['facilities']" (click)="toggleNavbar()">Facilities</a>
+        </div>
+
+        <a class="navbar-tabs" [routerLink]="" (click)="dropSubMenu('policies')">Policies</a>
+        <div class="navbar-submenu" [style.display]="dropdown === 'policies' ? 'block' : 'none'">
+            <a class="navbar-submenu-tabs" [routerLink]="['placement_policies']" (click)="toggleNavbar()">Placement Policies</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['internship_policies']" (click)="toggleNavbar()">Internship Policies</a>
+        </div>
+
+        <a class="navbar-tabs" [routerLink]="['life_at_iitg']" (click)="toggleNavbar()">Life at IITG</a>
+
+        <a class="navbar-tabs" [routerLink]="" (click)="dropSubMenu('student_utilities')">Student Utilities</a>
+        <div class="navbar-submenu" [style.display]="dropdown === 'student_utilities' ? 'block' : 'none'">
+            <a class="navbar-submenu-tabs" href="assets/documents/Full_Time_Hiring_Policy_2021_22_(student_side).pdf" target="_blank" (click)="toggleNavbar()">Placement Policies 2021-22</a>
+            <a class="navbar-submenu-tabs" href="https://www.iitg.ac.in/ccd/pages/masterCV.html" target="_blank" (click)="toggleNavbar()">Master CV</a>
+            <a class="navbar-submenu-tabs" href="http://nitish.site/resume-generator/" target="_blank" (click)="toggleNavbar()">Resume Generator</a>
+            <a class="navbar-submenu-tabs" href="https://www.overleaf.com/latex/templates/iit-guwahati-resume/fvqtppmzhvxn?fbclid=IwAR3YOIkCowbs6yM56MQfaDDV2woMRk0anzixUDFdAYLZZxFQ_A2VlND6IDw" target="_blank" (click)="toggleNavbar()">Latex CV template</a>
+        </div>
+
+        <a class="navbar-tabs" [routerLink]="['faqs']" (click)="toggleNavbar()">FAQ</a>
+
+        <a class="navbar-tabs" [routerLink]="" (click)="dropSubMenu('contact_us')">Contact Us</a>
+        <div class="navbar-submenu" [style.display]="dropdown === 'contact_us' ? 'block' : 'none'">
+            <a class="navbar-submenu-tabs" [routerLink]="['hocccd']" (click)="toggleNavbar()">Head of the Centre</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['faculty']" (click)="toggleNavbar()">Faculty Coordinators</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['office']" (click)="toggleNavbar()">CCD Office</a>
+            <a class="navbar-submenu-tabs" [routerLink]="['coordinators']" (click)="toggleNavbar()">Student Coordinators</a>
+        </div>
+    </div>
+    <a [routerLink]="" class="icon" (click)="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
