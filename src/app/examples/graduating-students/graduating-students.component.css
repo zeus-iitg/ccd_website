@@ -22,3 +22,8 @@ h3 {
 .second-chart {
     padding-top: 50px;
 }
+
+canvas {
+    height: 600px;
+    width: 300px;
+}

@@ -8,8 +8,8 @@
             <div id="graduating-students">
                 <div class="UG">
                 <h3 class="images-title"><mark>Undergraduate Programme</mark></h3>
-                <div style="display: block">
-                    <canvas baseChart
+                <div class="chart" style="display: block">
+                    <canvas baseChart height="350px" width="300px"
                             [data]="demoDoughnutChartData"
                             [labels]="doughnutChartLabels"
                             [chartType]="doughnutChartType"
@@ -19,21 +19,21 @@
                 </div>
                 <div class="PG">
                 <h3 class="images-title"><mark>Graduate Programme</mark></h3>
-                <div style="display: block">
-                    <canvas baseChart
+                <div class="chart" style="display: block">
+                    <canvas baseChart height="330px" width="300px"
                             [data]="PGdemoDoughnutChartData"
                             [labels]="PGdoughnutChartLabels"
                             [chartType]="PGdoughnutChartType"
                             [plugins]="PGdoughnutChartPlugins"
                             [options]="options"></canvas>
                 </div>
-                <div style="display: block" class="second-chart">
-                    <canvas baseChart
+                <div class="chart" style="display: block" class="second-chart">
+                    <canvas baseChart height="225px" width="300px"
                             [data]="PGdemoDoughnutChartData2"
                             [labels]="PGdoughnutChartLabels2"
                             [chartType]="PGdoughnutChartType2"
                             [plugins]="PGdoughnutChartPlugins2"
-                            [options]="options"></canvas>>
+                            [options]="options"></canvas>
                 </div>
                 </div>
             </div>

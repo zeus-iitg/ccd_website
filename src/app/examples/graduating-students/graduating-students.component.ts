@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {Label, PluginServiceGlobalRegistrationAndOptions, SingleDataSet} from 'ng2-charts';
 import {ChartType} from 'chart.js';
 import * as Chart from 'chart.js';
@@ -126,7 +126,27 @@ export class GraduatingStudentsComponent implements OnInit {
     }
   }];
 
-  constructor() { }
+  scrHeight: any;
+  scrWidth: any;
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?) {
+    this.scrHeight = window.innerHeight;
+    this.scrWidth = window.innerWidth;
+    if (this.scrWidth >= 800) {
+      this.options = {
+        legend: { position: 'right' }
+      }
+    } else {
+      this.options = {
+        legend: { position: 'top' }
+      }
+    }
+  }
+
+  constructor() {
+    this.getScreenSize();
+  }
 
   ngOnInit(): void {
   }
