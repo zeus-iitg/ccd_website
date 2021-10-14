@@ -18,3 +18,7 @@ th, td {
     color: black;
     font-weight: 400;
 }
+
+.mat-table {
+    overflow: auto;
+}
