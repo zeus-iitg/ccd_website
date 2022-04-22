@@ -34,109 +34,109 @@ export class ComponentsComponent implements OnInit {
     dynamicSlides = [
         {
             id: 1,
-            src: '../../assets/img/Website Icons/1.Microsoft.png',
+            src: 'assets/img/Website Icons/1.Microsoft.png',
             alt: 'Microsoft',
             title: 'Microsoft'
         },
         {
             id: 2,
-            src: '../../assets/img/Website Icons/2.Bajaj.jpg',
+            src: 'assets/img/Website Icons/2.Bajaj.jpg',
             alt: 'Bajaj',
             title: 'Bajaj'
         },
         {
             id: 3,
-            src: '../../assets/img/Website Icons/3.qualcomm.png',
+            src: 'assets/img/Website Icons/3.qualcomm.png',
             alt: 'Qualcomm',
             title: 'Qualcomm'
         },
         {
             id: 4,
-            src: '../../assets/img/Website Icons/4. TI.png',
+            src: 'assets/img/Website Icons/4. TI.png',
             alt: 'Texas Instruments',
             title: 'Texas Instruments'
         },
         {
             id: 5,
-            src: '../../assets/img/Website Icons/5. Google.jpg',
+            src: 'assets/img/Website Icons/5. Google.jpg',
             alt: 'Google',
             title: 'Google'
         },
         {
             id: 6,
-            src: '../../assets/img/Website Icons/6. GS.png',
+            src: 'assets/img/Website Icons/6. GS.png',
             alt: 'Goldman Sachs',
             title: 'Goldman Sachs'
         },
         {
             id: 7,
-            src: '../../assets/img/Website Icons/7. LTI.png',
+            src: 'assets/img/Website Icons/7. LTI.png',
             alt: 'Larsen & Toubro',
             title: 'Larsen & Toubro'
         },
         {
             id: 8,
-            src: '../../assets/img/Website Icons/8. Jaguar Land Rover.png',
+            src: 'assets/img/Website Icons/8. Jaguar Land Rover.png',
             alt: 'Jaguar Land Rover',
             title: 'Jaguar Land Rover'
         },
         {
             id: 9,
-            src: '../../assets/img/Website Icons/9. Samsung.png',
+            src: 'assets/img/Website Icons/9. Samsung.png',
             alt: 'Samsung',
             title: 'Samsung'
         },
         {
             id: 10,
-            src: '../../assets/img/Website Icons/10. Mastercard.jpg',
+            src: 'assets/img/Website Icons/10. Mastercard.jpg',
             alt: 'Mastercard',
             title: 'Mastercard'
         },
         {
             id: 11,
-            src: '../../assets/img/Website Icons/11. MB.png',
+            src: 'assets/img/Website Icons/11. MB.png',
             alt: 'Mercedes-Benz',
             title: 'Mercedes-Benz'
         },
         {
             id: 12,
-            src: '../../assets/img/Website Icons/12. UBER.png',
+            src: 'assets/img/Website Icons/12. UBER.png',
             alt: 'Uber',
             title: 'Uber'
         },
         {
             id: 13,
-            src: '../../assets/img/Website Icons/13. Oracle.png',
+            src: 'assets/img/Website Icons/13. Oracle.png',
             alt: 'Oracle',
             title: 'Oracle'
         },
         {
             id: 14,
-            src: '../../assets/img/Website Icons/14. GAIL.png',
+            src: 'assets/img/Website Icons/14. GAIL.png',
             alt: 'GAIL',
             title: 'GAIL'
         },
         {
             id: 15,
-            src: '../../assets/img/Website Icons/15. Mahindra.png',
+            src: 'assets/img/Website Icons/15. Mahindra.png',
             alt: 'Mahindra',
             title: 'Mahindra'
         },
         {
             id: 16,
-            src: '../../assets/img/Website Icons/16. Intel.png',
+            src: 'assets/img/Website Icons/16. Intel.png',
             alt: 'Intel',
             title: 'Intel'
         },
         {
             id: 17,
-            src: '../../assets/img/Website Icons/17. Sprinklr.png',
+            src: 'assets/img/Website Icons/17. Sprinklr.png',
             alt: 'Sprinklr',
             title: 'Sprinklr'
         },
         {
             id: 18,
-            src: '../../assets/img/Website Icons/18. Jio.jpg',
+            src: 'assets/img/Website Icons/18. Jio.jpg',
             alt: 'Jio',
             title: 'Jio'
         }
@@ -191,7 +191,7 @@ export class ComponentsComponent implements OnInit {
             heading: 'From the Director\'s desk',
             name: 'Prof. T. G. Sitharam',
             position: 'Director',
-            image: '../../assets/img/tgs.jpg',
+            image: 'assets/img/tgs.jpg',
             message: 'Indian Institute of Technology Guwahati was established in 1994 by an Act of Parliament. The academic programme started with 65 students in three undergraduate programmes in 1995. The Institute is growing steadily and the total number of students in eleven departments and three academic centres in numerous undergraduate and postgraduate programmes is now around 5100.\n' +
                 '\n' +
                 'The Institute has excellent infrastructure for all round development of its students. The laboratories are well equipped with modern cutting edge instruments for research and development.\n' +
@@ -209,7 +209,7 @@ export class ComponentsComponent implements OnInit {
             heading: 'From the Head of the Centre\'s desk',
             name: 'Dr. Abhishek Kumar, PhD',
             position: 'Head of the Centre for Career Development',
-            image: '../../assets/img/Abhishek_Kumar.jpg',
+            image: 'assets/img/Abhishek_Kumar.jpg',
             message: 'IIT Guwahati has recently entered the elite list of top 70 young universities of the world under 50 years. It is the best ranking for any Indian institute in the world university rankings. At this moment of pride and happiness, I take this opportunity to welcome you all.\n' +
                 '\n' +
                 'In a short duration of over two decades, IIT Guwahati has been able to develop world-class facilities and resources. We are well recognised for our research and teaching facilities in India and abroad.\n' +
@@ -254,10 +254,11 @@ export class ComponentsComponent implements OnInit {
         const modalRef = this.modalService.open(NgbModalContent);
         modalRef.componentInstance.modal_heading = 'Placement Reports';
         modalRef.componentInstance.modal_body = `
-        <p><a href="../../assets/documents/Placement_reports_2020_21.pdf" target="_blank"> Placement reports 2020-21 </a></p>
-        <p><a href="../../assets/documents/Placement_reports_2019_20.pdf" target="_blank"> Placement reports 2019-20 </a></p>
-        <p><a href="../../assets/documents/Placement_reports_2018_19.pdf" target="_blank"> Placement reports 2018-19 </a></p>
-        <p><a href="../../assets/documents/Placement_reports_2017_18.pdf" target="_blank"> Placement reports 2017-18 </a></p>
+        <p><a href="assets/documents/Placement_reports_2021_22.pdf" target="_blank"> Placement reports 2021-22 </a></p>
+        <p><a href="assets/documents/Placement_reports_2020_21.pdf" target="_blank"> Placement reports 2020-21 </a></p>
+        <p><a href="assets/documents/Placement_reports_2019_20.pdf" target="_blank"> Placement reports 2019-20 </a></p>
+        <p><a href="assets/documents/Placement_reports_2018_19.pdf" target="_blank"> Placement reports 2018-19 </a></p>
+        <p><a href="assets/documents/Placement_reports_2017_18.pdf" target="_blank"> Placement reports 2017-18 </a></p>
         `
     }
 
@@ -267,14 +268,14 @@ export class ComponentsComponent implements OnInit {
         modalRef.componentInstance.modal_body = `
         <div class="internship-noc">
             <div class="format">
-                <a href="../../assets/documents/Application-form-for-NOC-for-Internship.pdf" target="_blank">
-                    <img src="../../assets/img/Icons/PDF_file_icon.png" height="100" alt="PDF">
+                <a href="assets/documents/Application-form-for-NOC-for-Internship.pdf" target="_blank">
+                    <img src="assets/img/Icons/PDF_file_icon.png" height="100" alt="PDF">
                     <p class="modal-caption">Download PDF</p>
                 </a>
             </div>
             <div class="format">
-                <a href="../../assets/documents/Application-form-for-NOC-for-Internship.doc" target="_blank">
-                    <img src="../../assets/img/Icons/docx_icon.png" height="100" alt="DOC">
+                <a href="assets/documents/Application-form-for-NOC-for-Internship.doc" target="_blank">
+                    <img src="assets/img/Icons/docx_icon.png" height="100" alt="DOC">
                     <p class="modal-caption">Download DOC</p>
                 </a>
             </div>
@@ -288,14 +289,14 @@ export class ComponentsComponent implements OnInit {
         modalRef.componentInstance.modal_body = `
         <div class="internship-noc">
             <div class="format">
-                <a href="../../assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf" target="_blank">
-                    <img src="../../assets/img/Icons/placement%20brochure.png" height="100" width="100" alt="Placement Brochure">
+                <a href="assets/documents/IIT%20Guwahati%20Placement%20Brochure%202021-22.pdf" target="_blank">
+                    <img src="assets/img/Icons/placement%20brochure.png" height="100" width="100" alt="Placement Brochure">
                     <p class="modal-caption">Placement <br /> Brochure</p>
                 </a>
             </div>
             <div class="format">
-                <a href="../../assets/documents/Academic%20Brochure.pdf" target="_blank">
-                    <img src="../../assets/img/Icons/academic%20placement%20brochure.png" height="100" alt="Academic Placement Brochure">
+                <a href="assets/documents/Academic%20Brochure.pdf" target="_blank">
+                    <img src="assets/img/Icons/academic%20placement%20brochure.png" height="100" alt="Academic Placement Brochure">
                     <p class="modal-caption">Academic Placement <br /> Brochure</p>
                 </a>
             </div>
@@ -312,14 +313,14 @@ export class ComponentsComponent implements OnInit {
             <p class="heading"><h6>For Companies</h6></p>
             <div class="company-brochures">
             <div class="format">
-                <a href="../../assets/documents/Internship_Policies_2021_22.pdf" target="_blank">
-                    <img src="../../assets/img/Icons/internship%20policies.png" height="100" alt="Internship Policies 2021-22">
+                <a href="assets/documents/Internship_Policies_2021_22.pdf" target="_blank">
+                    <img src="assets/img/Icons/internship%20policies.png" height="100" alt="Internship Policies 2021-22">
                     <p class="modal-caption">Internship <br /> Policies <br /> 2021 - 2022</p>
                 </a>
             </div>
             <div class="format">
-                <a href="../../assets/documents/Placement_Policies_2021_22.pdf" target="_blank">
-                    <img src="../../assets/img/Icons/placement%20policies.png" height="100" alt="Placement Policies 2021-22">
+                <a href="assets/documents/Placement_Policies_2021_22.pdf" target="_blank">
+                    <img src="assets/img/Icons/placement%20policies.png" height="100" alt="Placement Policies 2021-22">
                     <p class="modal-caption">Placement <br /> Policies <br /> 2021 - 2022</p>
                 </a>
             </div>
@@ -328,8 +329,8 @@ export class ComponentsComponent implements OnInit {
             <div class="student-side">
             <p class="heading"><h6>For Students</h6></p>
             <div class="format">
-                <a href="../../assets/documents/Full_Time_Hiring_Policy_2021_22_(student_side).pdf" target="_blank">
-                    <img src="../../assets/img/Icons/student%20policies.png" height="100" alt="Placement Policies for students 2021 - 2022">
+                <a href="assets/documents/Full_Time_Hiring_Policy_2021_22_(student_side).pdf" target="_blank">
+                    <img src="assets/img/Icons/student%20policies.png" height="100" alt="Placement Policies for students 2021 - 2022">
                     <p class="modal-caption">Placement <br /> Policies <br /> 2021 - 2022</p>
                 </a>
             </div>
