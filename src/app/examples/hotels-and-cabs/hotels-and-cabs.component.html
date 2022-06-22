@@ -7,36 +7,36 @@
         <div class="container">
             <h3 class="images-title"><mark>Hotels</mark></h3>
             <div id="hotels-and-cabs">
-                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
                     <ng-container matColumnDef="name">
-                        <th mat-header-cell *matHeaderCellDef> Hotel Name </th>
-                        <td mat-cell *matCellDef="let hotel"> {{hotel.name}} </td>
+                        <mat-header-cell *matHeaderCellDef> Hotel Name </mat-header-cell>
+                        <mat-cell *matCellDef="let hotel"> {{hotel.name}} </mat-cell>
                     </ng-container>
 
                     <ng-container matColumnDef="address">
-                        <th mat-header-cell *matHeaderCellDef> Address </th>
-                        <td mat-cell *matCellDef="let hotel"> {{hotel.address}} </td>
+                        <mat-header-cell *matHeaderCellDef> Address </mat-header-cell>
+                        <mat-cell *matCellDef="let hotel"> {{hotel.address}} </mat-cell>
                     </ng-container>
 
                     <ng-container matColumnDef="contact">
-                        <th mat-header-cell *matHeaderCellDef> Contact No. </th>
-                        <td mat-cell *matCellDef="let hotel"> {{hotel.contact}} </td>
+                        <mat-header-cell *matHeaderCellDef> Contact No. </mat-header-cell>
+                        <mat-cell *matCellDef="let hotel"> {{hotel.contact}} </mat-cell>
                     </ng-container>
 
                     <ng-container matColumnDef="display_link">
-                        <th mat-header-cell *matHeaderCellDef> Website </th>
-                        <td mat-cell *matCellDef="let hotel"> <a href="{{hotel.link}}" target="_blank"> {{hotel.display_link}} </a> </td>
+                        <mat-header-cell *matHeaderCellDef> Website </mat-header-cell>
+                        <mat-cell *matCellDef="let hotel"> <a href="{{hotel.link}}" target="_blank"> {{hotel.display_link}} </a> </mat-cell>>
                     </ng-container>
 
                     <ng-container matColumnDef="distance">
-                        <th mat-header-cell *matHeaderCellDef> Distance from IIT Guwahati </th>
-                        <td mat-cell *matCellDef="let hotel"> {{hotel.distance}} </td>
+                        <mat-header-cell *matHeaderCellDef> Distance from IIT Guwahati </mat-header-cell>
+                        <mat-cell *matCellDef="let hotel"> {{hotel.distance}} </mat-cell>
                     </ng-container>
 
-                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                </mat-table>
                 <div class="additional-hotels">
                     <p>For more hotels, refer the below documents:</p>
                     <p><a href="assets/documents/hotels%20list.pdf" target="_blank"> Document 1 </a></p>
@@ -49,21 +49,21 @@
                     <p>Apart from them, you can contact the cab services listed below.</p>
                 </div>
                     <div class="cab-table">
-                <table mat-table [dataSource]="cabDataSource" class="mat-elevation-z8">
+                <mat-table [dataSource]="cabDataSource" class="mat-elevation-z8">
 
                     <ng-container matColumnDef="cab_service_name">
-                        <th mat-header-cell *matHeaderCellDef> Cab Service Name </th>
-                        <td mat-cell *matCellDef="let cab_service"> {{cab_service.cab_service_name}} </td>
+                        <mat-header-cell *matHeaderCellDef> Cab Service Name </mat-header-cell>
+                        <mat-cell *matCellDef="let cab_service"> {{cab_service.cab_service_name}} </mat-cell>
                     </ng-container>
 
                     <ng-container matColumnDef="cab_service_contact">
-                        <th mat-header-cell *matHeaderCellDef> Contact No. </th>
-                        <td mat-cell *matCellDef="let cab_service"> {{cab_service.cab_service_contact}} </td>
+                        <mat-header-cell *matHeaderCellDef> Contact No. </mat-header-cell>
+                        <mat-cell *matCellDef="let cab_service"> {{cab_service.cab_service_contact}} </mat-cell>
                     </ng-container>
 
-                    <tr mat-header-row *matHeaderRowDef="cabDisplayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: cabDisplayedColumns;"></tr>
-                </table>
+                    <mat-header-row *matHeaderRowDef="cabDisplayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: cabDisplayedColumns;"></mat-row>
+                </mat-table>
                     </div>
                 </div>
             </div>

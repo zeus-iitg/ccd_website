@@ -16,16 +16,8 @@ a {
     color: dodgerblue;
 }
 
-.mat-column-address {
-    width: 30%;
-}
-
 .additional-hotels {
     padding-top: 20px;
-}
-
-.mat-column-cab_service_name {
-    width: 50%;
 }
 
 .container {
@@ -39,3 +31,39 @@ a {
 .cab-table {
     padding-top: 20px;
 }
+
+.mat-table {
+    overflow-x: scroll;
+}
+
+.mat-column-distance {
+    min-width: 100px;
+}
+
+.mat-column-contact {
+    min-width: 150px;
+    padding-left: 20px;
+}
+
+.mat-column-name {
+    min-width: 200px;
+}
+
+.mat-column-display_link,
+.mat-column-address {
+    min-width: 225px;
+}
+
+.mat-header-row,
+.mat-row {
+    min-width: fit-content;
+}
+
+.mat-column-cab_service_name {
+    min-width: 200px;
+}
+
+.mat-column-cab_service_contact {
+    min-width: 300px;
+}
+
