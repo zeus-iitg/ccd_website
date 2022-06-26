@@ -20,5 +20,26 @@ th, td {
 }
 
 .mat-table {
-    overflow: auto;
+    overflow-x: scroll;
+}
+
+.mat-column-club_name {
+    min-width: 150px;
+}
+
+.mat-column-competition {
+    min-width: 150px;
+}
+
+.mat-column-event {
+    min-width: 150px;
+}
+
+.mat-column-position {
+    min-width: 150px;
+}
+
+.mat-header-row,
+.mat-row {
+    min-width: fit-content;
 }

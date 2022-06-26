@@ -6,6 +6,7 @@
 .faculty-container, .former-faculty-container {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .faculty-container-1 {
@@ -46,7 +47,9 @@ img {
 }
 
 .faculty-image {
-    margin-left: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .normal-size {
@@ -110,3 +113,47 @@ mark {
     justify-content: space-evenly;
     padding-bottom: 30px;
 }
+
+.faculty-image > img {
+    max-width: 260px;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width: 1000px) {
+    .faculty-container,
+    .former-faculty-container {
+        flex-direction: column;
+        align-content: center;
+    }
+    .fac-flex {
+        min-width: 100%;
+    }
+    .former-fac {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .faculty-flex-container,
+    .faculty-flex-container-2 {
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+    }
+    .quickLinks,
+    .quickLinks-2,
+    .quickLinks-3 {
+        min-width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .quickLinks-2 {
+        height: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .dept_fac > h3 {
+        margin-bottom: 70px;
+    }
+}
+

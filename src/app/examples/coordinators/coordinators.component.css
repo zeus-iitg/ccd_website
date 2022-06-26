@@ -58,6 +58,40 @@ p {
 }
 
 .flex-container, .flex-container-2 {
+    max-width: 100%;
+    margin-right: 50px;
     padding-bottom: 20px;
     flex-wrap: wrap;
+}
+
+.coord-img {
+    max-width: 260px;
+    aspect-ratio: 1/1;
+}
+
+.prev-coord-img {
+    max-width: 150px;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width: 1000px) {
+    .flex-container,
+    .flex-container-2 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .coord-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        min-width: fit-content;
+    }
+}
+
+@media (max-width: 500px) {
+    .placement > h3,
+    .internship > h3 {
+        margin-bottom: 40px;
+    }
 }

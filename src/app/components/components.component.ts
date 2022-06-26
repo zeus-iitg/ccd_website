@@ -315,13 +315,13 @@ export class ComponentsComponent implements OnInit {
             <div class="format">
                 <a href="assets/documents/Internship_Policies_2021_22.pdf" target="_blank">
                     <img src="assets/img/Icons/internship%20policies.png" height="100" alt="Internship Policies 2021-22">
-                    <p class="modal-caption">Internship <br /> Policies <br /> 2021 - 2022</p>
+                    <p class="modal-caption">Internship <br /> Policies <br /> 2021&nbsp;-&nbsp;2022</p>
                 </a>
             </div>
             <div class="format">
                 <a href="assets/documents/Placement_Policies_2021_22.pdf" target="_blank">
                     <img src="assets/img/Icons/placement%20policies.png" height="100" alt="Placement Policies 2021-22">
-                    <p class="modal-caption">Placement <br /> Policies <br /> 2021 - 2022</p>
+                    <p class="modal-caption">Placement <br /> Policies <br /> 2021&nbsp;-&nbsp;2022</p>
                 </a>
             </div>
             </div>
@@ -330,8 +330,8 @@ export class ComponentsComponent implements OnInit {
             <p class="heading"><h6>For Students</h6></p>
             <div class="format">
                 <a href="assets/documents/Full_Time_Hiring_Policy_2021_22_(student_side).pdf" target="_blank">
-                    <img src="assets/img/Icons/student%20policies.png" height="100" alt="Placement Policies for students 2021 - 2022">
-                    <p class="modal-caption">Placement <br /> Policies <br /> 2021 - 2022</p>
+                    <img src="assets/img/Icons/student%20policies.png" height="100" alt="Placement Policies for students 2021-2022">
+                    <p class="modal-caption">Placement <br /> Policies <br /> 2021&nbsp;-&nbsp;2022</p>
                 </a>
             </div>
             </div>

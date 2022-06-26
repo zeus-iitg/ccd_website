@@ -16,10 +16,9 @@ a {
 }
 
 .img-circle {
-    height: 300px;
-    width: 300px;
     max-width: 300px;
-    margin-left: -70px;
+    aspect-ratio: 1/1;
+    margin-left: -50px;
     margin-top: -50px;
 }
 
@@ -69,4 +68,23 @@ p {
 h4, h5, p {
     color: black;
     font-weight: 400;
+}
+
+.prev-head-img {
+    max-width: 260px;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width: 1000px) {
+    .flex-container-1 {
+        flex-direction: column;
+        align-content: center;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .flex-container-1 {
+        padding-left: 20px;
+    }
 }
